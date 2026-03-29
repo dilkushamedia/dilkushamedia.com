@@ -20,7 +20,28 @@ header {
   background: linear-gradient(90deg, #0b2545, #1f3c88);
   padding: 40px 20px;
 }
+    
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
 
+.logo-container img {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text h1 {
+  margin: 0;
+}
+
+.logo-text p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #cbd5e1;
+}
     header h1 {
       margin: 0;
       font-size: 36px;
@@ -89,10 +110,15 @@ header {
 
 <body>
 
-  <header>
-    <h1>Dilkusha Media</h1>
-    <p>Apps • Content • Stories that inspire, educate, and entertain</p>
-  </header>
+<header>
+  <div class="logo-container">
+    <img src="dilkushamedia-logo-transparent.png" alt="Dilkusha Media Logo">
+    <div class="logo-text">
+      <h1>Dilkusha Media</h1>
+      <p>Apps • Content • Stories that inspire, educate, and entertain</p>
+    </div>
+  </div>
+</header>
 
   <div class="container">
 
