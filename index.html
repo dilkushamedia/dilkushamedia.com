@@ -8,35 +8,54 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0b1220, #1f3c88);
       color: white;
       text-align: center;
-      background: linear-gradient(135deg, #0b1220, #1f3c88);
     }
 
-    .container {
-      margin-top: 100px;
+    header {
+      background: #0b2545;
+      padding: 40px 20px;
     }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    header h1 {
+      margin: 0;
+      font-size: 36px;
     }
 
-    p {
-      font-size: 20px;
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
       color: #cbd5e1;
     }
 
+    .container {
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      color: #333;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
     .btn {
-      margin-top: 30px;
-      padding: 14px 28px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
       background: #2979f2;
       color: white;
-      cursor: pointer;
-      transition: 0.3s;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .btn:hover {
@@ -44,7 +63,8 @@
     }
 
     footer {
-      margin-top: 80px;
+      margin-top: 40px;
+      padding: 20px;
       font-size: 14px;
       color: #94a3b8;
     }
@@ -52,15 +72,44 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1>Dilkusha Media</h1>
-    <p>Building Apps, AI Tools, and Digital Experiences🚀</p>
 
-    <button class="btn">Launching Soon</button>
+  <header>
+    <h1>Dilkusha Media</h1>
+    <p>Building Apps, AI Tools, and Digital Experiences</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>About Us</h2>
+      <p>
+        Dilkusha Media builds modern digital experiences — from mobile apps 
+        to AI-powered tools and creative platforms. We focus on simplicity, 
+        innovation, and meaningful impact.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>What We Do</h2>
+      <p>📱 Mobile & iOS App Development</p>
+      <p>🤖 AI Tools & Automation</p>
+      <p>🎨 Content & Digital Media</p>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email: info@dilkushamedia.com</p>
+
+      <a href="mailto:info@dilkushamedia.com" class="btn">
+        Contact Us
+      </a>
+    </div>
+
   </div>
 
   <footer>
-    © 2026 Dilkusha Media
+    © 2026 Dilkusha Media — All rights reserved
   </footer>
+
 </body>
 </html>
